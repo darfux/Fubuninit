@@ -1,0 +1,1 @@
+Fubuninit -- Fux's ubuntu custom initialize tool
