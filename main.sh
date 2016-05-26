@@ -11,3 +11,4 @@ bash setup_proxy.sh
 bash install_zsh.sh
 bash install_ruby.sh
 bash install_basic_packages.sh
+bash dconf_setup.sh
