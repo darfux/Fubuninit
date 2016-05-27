@@ -5,7 +5,7 @@ class AptGet
 class << self
 	def install(package_name)
 		return true if package_installed?(package_name)
-		run_bash("apt-get -y install #{package_name}")	
+		run_bash!("apt-get -y install #{package_name}")	
 	end
 	
 	def install_deb(src, file_name=nil)
@@ -23,8 +23,8 @@ class << self
 			src = install_file
 		end
 		# run_bash("dpkg -I #{chrome_file}")
-		run_bash("dpkg -i #{install_file}")
-		run_bash("apt-get -y install -f")
+		run_bash!("dpkg -i #{install_file}")
+		run_bash!("apt-get -y install -f")
 
 		$?.exitstatus
 	end
