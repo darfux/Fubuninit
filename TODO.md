@@ -1,6 +1,6 @@
 
--[ ] ssh gen
--[ ] git-config
+-[*] ssh gen
+-[*] git-config
 -[*] sublime with IME support
 -[*] terminal theme(using dconf)
 -[ ] java
