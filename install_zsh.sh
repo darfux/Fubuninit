@@ -11,3 +11,5 @@ sed -i "s/chsh -s/whoami | xargs sudo chsh -s/g" zsh-install.sh
 proxychains sh zsh-install.sh
 
 rm zsh-install.sh
+
+sed -i "s/export PATH=\"\//export PATH=\"\$PATH:\//" ~/.zshrc
