@@ -5,10 +5,11 @@
 -[*] terminal theme(using dconf)
 -[*] java
 -[ ] remove titlebar when maximum
-
+-[*] change gnome theme
 
 Features
--[ ] Error handler
+-[ ] error handler
+-[ ] bin/ struct exaple
 
 
 
