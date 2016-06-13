@@ -9,6 +9,7 @@ class << self
 	end
 	
 	def install_deb(src, file_name=nil)
+		install_file = src
 		if (/http(|s):\/\// =~ src)==0
 			url = src
 
@@ -36,7 +37,7 @@ class << self
 		"which #{bin_name}"].each do |cmd|
 			`#{cmd}`
 			if $?.exitstatus == 0
-				puts "#{bin_name} already installed"
+				puts "#{bin_name||package_name} already installed"
 				return true
 			end
 		end
