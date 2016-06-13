@@ -3,7 +3,7 @@
 -[*] git-config
 -[*] sublime with IME support
 -[*] terminal theme(using dconf)
--[ ] java
+-[*] java
 -[ ] remove titlebar when maximum
 
 
