@@ -4,12 +4,14 @@
 -[*] sublime with IME support
 -[*] terminal theme(using dconf)
 -[*] java
--[ ] remove titlebar when maximum
+-[*] remove titlebar when maximum
 -[*] change gnome theme
+-[ ] add new document template
+-[ ] remove rvmsudo hint
 
 Features
 -[ ] error handler
--[ ] bin/ struct exaple
+-[ ] bin/ struct example
 
 
 

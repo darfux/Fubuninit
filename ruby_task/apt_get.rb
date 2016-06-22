@@ -3,9 +3,9 @@ require './run_bash'
 
 class AptGet
 class << self
-	def install(package_name)
-		return true if package_installed?(package_name)
-		run_bash!("apt-get -y install #{package_name}")	
+	def install(*package_names)
+		# return true if package_installed?(package_name)
+		run_bash!("apt-get -y install #{package_names.join(' ')}")
 	end
 	
 	def install_deb(src, file_name=nil)
