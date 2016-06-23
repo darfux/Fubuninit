@@ -3,7 +3,6 @@
 if [[ "$1" == "setup" ]]; then
 	unzip ../bin/gnome-extensions/maximus-two@wilfinitlike.gmail.com.zip -d /home/darfux/.local/share/gnome-shell/extensions
 
-	dconf  write   /org/gnome/shell/disable-extension-version-validation true
 	gnome-shell-extension-tool -e maximus-two@wilfinitlike.gmail.com
 
 
