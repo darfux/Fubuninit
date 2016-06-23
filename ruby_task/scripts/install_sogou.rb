@@ -1,10 +1,10 @@
-require './apt_get'
-
 def install_sogou
 	return true if AptGet.package_installed?('sogou-qimpanel')
 
-	download_url = "http://pinyin.sogou.com/linux/download.php?f=linux&bit=64"
-	if AptGet.install_deb(download_url, "sogou_pinyin_linux")==0
+	# download_url = "http://pinyin.sogou.com/linux/download.php?f=linux&bit=64"
+	run_bash("cp ../bin/sogou/sogoupinyin_2.0.0.0078_amd64.deb #{Fubuninit::TMP_DIR}/")
+
+	if AptGet.install_deb("sogoupinyin_2.0.0.0078_amd64")==0
 		sleep 1
 		pid = Process.fork
 		if pid.nil? then
@@ -25,5 +25,3 @@ def install_sogou
 	end
 	puts "Sogou over"
 end
-
-install_sogou

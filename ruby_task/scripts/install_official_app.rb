@@ -1,6 +1,3 @@
-require 'yaml'
-require './apt_get'
-
 def install_official_app
 	app_list= YAML.load(File.read("app_list.yaml"))
 
@@ -10,5 +7,3 @@ def install_official_app
 		puts "#{app} over"
 	end
 end
-
-install_official_app

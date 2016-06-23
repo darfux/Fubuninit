@@ -1,6 +1,3 @@
-require './run_bash'
-
-
 def setup_sublime
 	run_bash_file("sublime", "extract")
 	t = Thread.new do
@@ -12,5 +9,3 @@ def setup_sublime
 	run_bash_file("sublime", "package_control")
 	run_bash_file!("sublime", "gen_bin")
 end
-
-setup_sublime

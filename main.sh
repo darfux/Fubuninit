@@ -12,3 +12,5 @@ bash install_zsh.sh
 bash install_ruby.sh
 bash install_basic_packages.sh
 bash terminal_config.sh
+
+bash -c "cd ruby_task; rvmsudo -E ruby main.rb"

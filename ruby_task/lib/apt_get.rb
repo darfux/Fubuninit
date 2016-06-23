@@ -1,5 +1,5 @@
-require './fubuninit'
-require './run_bash'
+require_relative './fubuninit'
+require_relative './run_bash'
 
 class AptGet
 class << self
@@ -22,6 +22,9 @@ class << self
 				run_bash("proxychains aria2c '#{url}' -d '#{Fubuninit::TMP_DIR}' -o #{file_name}")
 			end
 			src = install_file
+		else
+			install_file += ".deb" if install_file[-3..-1] != "deb"
+			install_file = "#{Fubuninit::TMP_DIR}/#{install_file}"
 		end
 		# run_bash("dpkg -I #{chrome_file}")
 		run_bash!("dpkg -i #{install_file}")
