@@ -14,3 +14,6 @@ proxychains rvm install ruby --latest
 /bin/zsh --login -c "rvm use ruby --latest --default"
 
 /bin/zsh --login -c "ruby -v"
+
+echo "export rvmsudo_secure_path=1" >> ~/.bashrc
+echo "export rvmsudo_secure_path=1" >> ~/.zshrc

@@ -6,8 +6,12 @@
 -[*] java
 -[*] remove titlebar when maximum
 -[*] change gnome theme
--[ ] add new document template
--[ ] remove rvmsudo hint
+-[*] add new document template
+-[*] remove rvmsudo hint
+-[*] app config
+	-[*] tilda
+	-[*] filezilla
+-[ ] android studio
 
 Features
 -[ ] error handler

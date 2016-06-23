@@ -8,3 +8,7 @@ fi
 if [[ "$1" == "change" ]]; then
 	dconf write /org/gnome/desktop/interface/icon-theme "'Humanity'"
 fi
+
+if [[ "$1" == "gtk" ]]; then
+	cp ../bin/gtk/gtk.css ~/.config/gtk-3.0/
+fi
