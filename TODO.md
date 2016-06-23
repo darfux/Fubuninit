@@ -11,7 +11,8 @@
 -[*] app config
 	-[*] tilda
 	-[*] filezilla
--[ ] android studio
+-[*] android studio
+-[*] favorite application
 
 Features
 -[ ] error handler
