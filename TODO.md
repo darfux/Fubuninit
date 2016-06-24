@@ -16,7 +16,7 @@
 
 Features
 -[ ] error handler
--[ ] bin/ struct example
+-[*] bin/ struct example
 
 
 

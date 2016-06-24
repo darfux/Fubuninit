@@ -1,0 +1,39 @@
+bin/
+├── android_studio
+│   ├── android-sdk_r24.4.1-linux.tgz
+│   ├── android-studio-ide-143.2915827-linux.zip
+│   └── jetbrains-studio.desktop
+├── chrome
+│   └── google-chrome-stable_current_amd64.deb
+├── filezilla
+│   ├── filezilla.xml
+│   └── sitemanager.xml
+├── gnome-extensions
+│   ├── maximus-two@wilfinitlike.gmail.com.zip
+│   └── system-monitor@paradoxxx.zero.gmail.com.zip
+├── grub_customizer
+│   └── grub-customizer_5.0.6-0ubuntu1-ppa1x_amd64.deb
+├── gtk
+│   └── gtk.css
+├── java
+│   ├── jdk-8u92-linux-x64.tar.gz
+│   └── use_java
+├── shadowsocks
+│   ├── config.json
+│   ├── config.json~
+│   ├── config.json.v4
+│   ├── config.json.v6
+│   └── shadowsocks-local-linux64-1.1.4
+├── sogou
+│   ├── Default_black.ssf
+│   └── sogoupinyin_2.0.0.0078_amd64.deb
+├── structure.example
+├── sublime
+│   └── SublimeText2.tar.gz
+├── theme
+│   └── humanity-icon-theme_0.6.10.tar.gz
+└── tilda
+    ├── config_0
+    └── tilda_reset
+
+12 directories, 24 files
