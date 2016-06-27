@@ -1,15 +1,15 @@
 #!/bin/bash
 
-cp -r ./bin/shadowsocks ~/Tools
+cp -r ./base/shadowsocks ~/Tools
 
 chmod 754 ~/Tools/shadowsocks/shadowsocks-local-linux64-1.1.4
 
 mkdir ~/.config/autostart/
-cp ./conf/proxy/shadowsocks-local-linux64-1.1.4.desktop ~/.config/autostart/
+cp ./base/shadowsocks/shadowsocks-local-linux64-1.1.4.desktop ~/.config/autostart/
 
 nohup ~/Tools/shadowsocks/shadowsocks-local-linux64-1.1.4 > /dev/null & 
 
-cp -r ./conf/proxy/.proxychains ~/
+cp -r ./base/proxy/.proxychains ~/
 
 sudo apt-get -y install proxychains
 

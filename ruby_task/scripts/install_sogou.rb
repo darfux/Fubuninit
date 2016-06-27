@@ -8,7 +8,7 @@ def install_sogou
 		sleep 1
 		pid = Process.fork
 		if pid.nil? then
-			`sudo -EH -u #{ENV['SUDO_USER'].chomp} bash -c 'fcitx > /dev/null'`
+			run_bash("fcitx > /dev/null")
 			exit
 		else
 			Process.detach(pid)
@@ -18,10 +18,10 @@ def install_sogou
 			puts "waiting for profile create"
 			sleep 0.2
 		end
-		`kill #{pid}`
+		run_bash!("kill #{pid}")
 		sleep 1
-		`sed  -i "s/sogoupinyin:False/sogoupinyin:True/g" #{ENV['HOME']}/.config/fcitx/profile`
-		`sudo -EH -u #{ENV['SUDO_USER'].chomp} bash -c 'fcitx-remote -r  > /dev/null'`
+		run_bash("sed  -i \"s/sogoupinyin:False/sogoupinyin:True/g\" #{ENV['HOME']}/.config/fcitx/profile")
+		run_bash("fcitx-remote -r  > /dev/null")
+		run_bash("xdg-open  ../bin/sogou/Default_black.ssf")
 	end
-	puts "Sogou over"
 end

@@ -24,13 +24,14 @@ class << self
 			src = install_file
 		else
 			install_file += ".deb" if install_file[-3..-1] != "deb"
-			install_file = "#{Fubuninit::TMP_DIR}/#{install_file}"
+			unless File.exists? install_file
+				install_file = "#{Fubuninit::TMP_DIR}/#{install_file}"
+			end
 		end
 		# run_bash("dpkg -I #{chrome_file}")
-		run_bash!("dpkg -i #{install_file}")
-		run_bash!("apt-get -y install -f")
+		run_bash!("gdebi -n #{install_file}")
 
-		$?.exitstatus
+		0
 	end
 
 

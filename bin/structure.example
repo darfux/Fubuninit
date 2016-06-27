@@ -18,12 +18,6 @@ bin/
 ├── java
 │   ├── jdk-8u92-linux-x64.tar.gz
 │   └── use_java
-├── shadowsocks
-│   ├── config.json
-│   ├── config.json~
-│   ├── config.json.v4
-│   ├── config.json.v6
-│   └── shadowsocks-local-linux64-1.1.4
 ├── sogou
 │   ├── Default_black.ssf
 │   └── sogoupinyin_2.0.0.0078_amd64.deb
@@ -36,4 +30,4 @@ bin/
     ├── config_0
     └── tilda_reset
 
-12 directories, 24 files
+11 directories, 19 files

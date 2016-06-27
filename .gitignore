@@ -1,4 +1,8 @@
+/base/*
 /bin/*
 /conf
 /references
 !/bin/structure.example
+!/base/structure.example
+
+*.log

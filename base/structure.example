@@ -1,0 +1,11 @@
+base/
+├── proxy
+├── shadowsocks
+│   ├── config.json
+│   ├── config.json.v4
+│   ├── config.json.v6
+│   ├── shadowsocks-local-linux64-1.1.4
+│   └── shadowsocks-local-linux64-1.1.4.desktop
+└── structure.example
+
+2 directories, 6 files

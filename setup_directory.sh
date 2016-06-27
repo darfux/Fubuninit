@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mkdir ~/bin
-mkdir ~/Tmp
-mkdir ~/Project
-mkdir ~/Tools
+mkdir -p ~/bin
+mkdir -p ~/Tmp
+mkdir -p ~/Project
+mkdir -p ~/Tools
