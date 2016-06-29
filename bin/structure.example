@@ -30,8 +30,10 @@ bin/
 │   └── SublimeText2.tar.gz
 ├── theme
 │   └── humanity-icon-theme_0.6.10.tar.gz
-└── tilda
-    ├── config_0
-    └── tilda_reset
+├── tilda
+│   ├── config_0
+│   └── tilda_reset
+└── tools
+    └── fast-rm
 
-12 directories, 22 files
+13 directories, 23 files
