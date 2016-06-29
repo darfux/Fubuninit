@@ -19,8 +19,12 @@ bin/
 │   ├── jdk-8u92-linux-x64.tar.gz
 │   └── use_java
 ├── sogou
-│   ├── Default_black.ssf
-│   └── sogoupinyin_2.0.0.0078_amd64.deb
+│   ├── Default_black
+│   │   ├── Default_black.ssf
+│   │   └── skin.ini
+│   ├── main.conf
+│   ├── sogoupinyin_2.0.0.0078_amd64.deb
+│   └── useSkin.txt
 ├── structure.example
 ├── sublime
 │   └── SublimeText2.tar.gz
@@ -30,4 +34,4 @@ bin/
     ├── config_0
     └── tilda_reset
 
-11 directories, 19 files
+12 directories, 22 files
