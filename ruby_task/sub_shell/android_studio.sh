@@ -1,11 +1,16 @@
 #!/bin/bash
 
-if [[ "$1" == "setup" ]]; then
-	ads_package=$(find ../bin/android_studio/android-studio-ide* -type f)
+
+if [[ "$1" == "sdk" ]]; then
 	sdk_package=$(find ../bin/android_studio/android-sdk* -type f)
+	tar -xzvf $sdk_package -C $FUB_TMP_DIR
+	echo "export PATH=\"\$PATH:/opt/android-studio-linux/sdk/platform-tools\"" >> ~/.profile
+fi
+
+
+if [[ "$1" == "setup" ]]; then
+	mv $FUB_TMP_DIR/android-sdk-linux /opt/
+	ads_package=$(find ../bin/android_studio/android-studio-ide* -type f)
 	unzip $ads_package -d /opt/
-	#tar -xzvf $sdk_package -C /opt/android-studio
-	#mv /opt/android-studio/android-sdk-linux /opt/android-studio/sdk
 	cp ../bin/android_studio/jetbrains-studio.desktop /usr/share/applications/
-	#echo "export PATH=\"\$PATH:/opt/android-studio/sdk/platform-tools\"" >> ~/.profile
 fi
