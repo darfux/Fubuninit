@@ -11,6 +11,9 @@ fi
 
 if [[ "$1" == "gtk" ]]; then
 	cp ../bin/gtk/gtk.css ~/.config/gtk-3.0/
+
+	#open inspector: GTK_DEBUG=interactive nautilus
+	gsettings set org.gtk.Settings.Debug enable-inspector-keybinding true
 fi
 
 if [[ "$1" == "favorite" ]]; then
