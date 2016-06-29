@@ -22,6 +22,25 @@ def install_sogou
 		sleep 1
 		run_bash("sed  -i \"s/sogoupinyin:False/sogoupinyin:True/g\" #{ENV['HOME']}/.config/fcitx/profile")
 		run_bash("fcitx-remote -r  > /dev/null")
-		run_bash("xdg-open  ../bin/sogou/Default_black.ssf")
+
+
+		sleep 1
+		pid = Process.fork
+		if pid.nil? then
+			run_bash("sogou-qimpanel > /dev/null")
+			exit
+		else
+			Process.detach(pid)
+		end
+		loop do
+			break if File.exists? "#{ENV['HOME']}/.config/sogou-qimpanel/main.conf"
+			puts "waiting for sogou-qimpanel create"
+			sleep 1
+		end
+		sleep 1
+		run_bash!("kill #{pid}")
+		run_bash("cp  -r ../bin/sogou/Default_black #{ENV['HOME']}/.config/sogou-qimpanel/skin/")
+		run_bash("cp  ../bin/sogou/main.conf #{ENV['HOME']}/.config/sogou-qimpanel/")
+
 	end
 end
