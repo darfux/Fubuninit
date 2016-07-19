@@ -17,3 +17,5 @@ proxychains rvm install ruby --latest
 
 echo "export rvmsudo_secure_path=1" >> ~/.bashrc
 echo "export rvmsudo_secure_path=1" >> ~/.zshrc
+
+echo "gem: --no-document" >> ~/.gemrc

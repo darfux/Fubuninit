@@ -27,6 +27,7 @@ bin/
 │   └── useSkin.txt
 ├── structure.example
 ├── sublime
+│   ├── subl.desktop
 │   └── SublimeText2.tar.gz
 ├── theme
 │   └── humanity-icon-theme_0.6.10.tar.gz
@@ -36,4 +37,4 @@ bin/
 └── tools
     └── fast-rm
 
-13 directories, 23 files
+13 directories, 24 files
