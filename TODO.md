@@ -19,7 +19,7 @@
 	-[ ] install bower
 -[ ] setup poplipo
 -[ ] sync sublime settings(https://packagecontrol.io/docs/syncing#git)
--[ ] using subl as git-cola editor
+-[*] using subl as git-cola editor
 
 Features
 -[ ] error handler

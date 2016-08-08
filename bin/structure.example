@@ -9,6 +9,7 @@ bin/
 ├── filezilla
 │   ├── filezilla.xml
 │   └── sitemanager.xml
+├── gitcola
 ├── gnome-extensions
 │   ├── maximus-two@wilfinitlike.gmail.com.zip
 │   └── system-monitor@paradoxxx.zero.gmail.com.zip
@@ -40,4 +41,4 @@ bin/
 └── tools
     └── fast-rm
 
-14 directories, 26 files
+15 directories, 26 files
