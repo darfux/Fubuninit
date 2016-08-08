@@ -4,7 +4,8 @@ bin/
 │   ├── android-studio-ide-143.2915827-linux.zip
 │   └── jetbrains-studio.desktop
 ├── chrome
-│   └── google-chrome-stable_current_amd64.deb
+│   ├── google-chrome-stable_current_amd64.deb
+│   └── Proxy-SwitchyOmega_v2.3.19.zip
 ├── filezilla
 │   ├── filezilla.xml
 │   └── sitemanager.xml
@@ -16,6 +17,8 @@ bin/
 ├── gtk
 │   └── gtk.css
 ├── java
+│   ├── ant
+│   │   └── apache-ant-1.9.7-bin.tar.bz2
 │   ├── jdk-8u92-linux-x64.tar.gz
 │   └── use_java
 ├── sogou
@@ -37,4 +40,4 @@ bin/
 └── tools
     └── fast-rm
 
-13 directories, 24 files
+14 directories, 26 files

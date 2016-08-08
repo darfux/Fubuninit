@@ -15,4 +15,6 @@ if [[ "$1" == "setup" ]]; then
 	dconf  write  /org/gnome/shell/extensions/system-monitor/net-style "'digit'"
 
 	gnome-shell-extension-tool -e system-monitor@paradoxxx.zero.gmail.com
+
+	gnome-shell-extension-tool -e drive-menu@gnome-shell-extensions.gcampax.github.com
 fi

@@ -13,4 +13,4 @@ proxychains sh zsh-install.sh
 rm zsh-install.sh
 
 sed -i "s/export PATH=\"\//export PATH=\"\$PATH:\//" ~/.zshrc
-sed -i "s/plugins=(git)/plugins=(git ruby rails)/g" .zshrc
+sed -i "s/plugins=(git)/plugins=(git ruby rails)/g" ~/.zshrc
