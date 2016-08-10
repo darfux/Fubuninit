@@ -21,7 +21,13 @@ command_list = [
 	:setup_gnome_extension,
 	:config_favorite,
 	:setup_template,
+
+	:setup_nvm_and_node,
 ]
+
+if ARGV
+	command_list = command_list & ARGV.collect{ |cmd| cmd.to_sym }
+end
 
 command_list.each do |cmd|
 	flag_file = "#{Fubuninit::LOG_DIR}/#{cmd}.done"
