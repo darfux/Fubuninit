@@ -1,6 +1,13 @@
+
+if ENV['USER']!="root"
+	puts "YOU NEED RVMSUDO TO RUN THIS!"
+	exit
+end
+
 require 'yaml'
 Dir.glob("lib/*") { |file| require "./#{file}" }
 Dir.glob("scripts/*") { |file| require "./#{file}" }
+
 
 
 # test
