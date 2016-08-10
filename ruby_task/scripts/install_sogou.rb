@@ -21,6 +21,7 @@ def install_sogou
 		run_bash!("kill #{pid}")
 		sleep 1
 		run_bash("sed  -i \"s/sogoupinyin:False/sogoupinyin:True/g\" #{ENV['HOME']}/.config/fcitx/profile")
+		run_bash(%Q{ sed -i s/"#SwitchPreedit=CTRL_ALT_P"/"SwitchPreedit="/g #{ENV['HOME']}/.config/fcitx/config })
 		run_bash("fcitx-remote -r  > /dev/null")
 
 

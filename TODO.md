@@ -2,7 +2,7 @@
 - [x] ssh gen
 - [x] git-config
 - [x] sublime with IME support
-	- [ ] fix ctrl+alt+p overrided by fcitx
+	- [x] fix ctrl+alt+p overrided by fcitx
 - [x] terminal theme(using dconf)
 - [x] java
 	- [ ] ant
@@ -16,7 +16,7 @@
 - [x] android studio
 - [x] favorite application
 - [x] install nodejs by nvm
-	- [ ] install bower
+	- [x] install bower
 - [ ] setup poplipo
 - [ ] sync sublime settings(https://packagecontrol.io/docs/syncing#git)
 - [x] using subl as git-cola editor
