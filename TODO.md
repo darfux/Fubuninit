@@ -5,7 +5,7 @@
 	- [x] fix ctrl+alt+p overrided by fcitx
 - [x] terminal theme(using dconf)
 - [x] java
-	- [ ] ant
+	- [x] ant
 - [x] remove titlebar when maximum
 - [x] change gnome theme
 - [x] add new document template
@@ -17,14 +17,13 @@
 - [x] favorite application
 - [x] install nodejs by nvm
 	- [x] install bower
-- [ ] setup poplipo
-- [ ] sync sublime settings(https://packagecontrol.io/docs/syncing#git)
+- [x] setup poplipo
+- [x] sync sublime settings(https://packagecontrol.io/docs/syncing#git)
 - [x] using subl as git-cola editor
 
 **Features**
-- [ ] error handler
+- [ ] error handler and retry
 - [x] bin/ struct example
 - [ ] server version
-
 
 

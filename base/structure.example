@@ -1,4 +1,6 @@
 base/
+├── polipo
+│   └── config
 ├── proxy
 ├── shadowsocks
 │   ├── config.json
@@ -8,4 +10,4 @@ base/
 │   └── shadowsocks-local-linux64-1.1.4.desktop
 └── structure.example
 
-2 directories, 6 files
+3 directories, 7 files

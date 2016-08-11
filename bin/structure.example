@@ -2,14 +2,17 @@ bin/
 ├── android_studio
 │   ├── android-sdk_r24.4.1-linux.tgz
 │   ├── android-studio-ide-143.2915827-linux.zip
-│   └── jetbrains-studio.desktop
+│   ├── jetbrains-studio.desktop
+│   └── platform-tools_r24rc2-linux_rc2.zip
+├── apache-ant
+│   ├── apache-ant-1.9.7-bin.tar.bz2
+│   └── apache-ant.sh
 ├── chrome
 │   ├── google-chrome-stable_current_amd64.deb
 │   └── Proxy-SwitchyOmega_v2.3.19.zip
 ├── filezilla
 │   ├── filezilla.xml
 │   └── sitemanager.xml
-├── gitcola
 ├── gnome-extensions
 │   ├── maximus-two@wilfinitlike.gmail.com.zip
 │   └── system-monitor@paradoxxx.zero.gmail.com.zip
@@ -41,4 +44,4 @@ bin/
 └── tools
     └── fast-rm
 
-15 directories, 26 files
+15 directories, 29 files

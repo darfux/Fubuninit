@@ -22,6 +22,15 @@ if [[ "$1" == "package_control" ]]; then
 	-O "$setting_path/Installed Packages/Package Control.sublime-package"
 fi
 
+
+if [[ "$1" == "sync_user_profile" ]]; then
+	profile_path="$HOME/.config/sublime-text-2/Packages/User"
+	rm -rf $profile_path/*
+	proxychains git clone https://github.com/darfux/ST2C.fux.git $profile_path
+	ln -s $profile_path "$HOME/Documents/STC2.fux"
+fi
+
+
 if [[ "$1" == "test" ]]; then
 	echo user: $USER
 	echo Argu is: $1

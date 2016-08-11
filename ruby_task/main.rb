@@ -22,6 +22,7 @@ command_list = [
 	:config_git,
 
 	:setup_java,
+	:setup_apache_ant,
 	:setup_android_studio,
 
 	:change_theme,
@@ -32,7 +33,7 @@ command_list = [
 	:setup_nvm_and_node,
 ]
 
-if ARGV
+if ARGV.length > 0
 	command_list = command_list & ARGV.collect{ |cmd| cmd.to_sym }
 end
 
