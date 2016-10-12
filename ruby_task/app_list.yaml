@@ -10,9 +10,13 @@
 - vlc
 - alacarte
 - gimp
+- vim
 
 - mesa-utils
 
 - screenfetch
 - lm-sensors
 - testdisk
+- sysv-rc-conf
+- python-mutagen
+- nautilus-actions

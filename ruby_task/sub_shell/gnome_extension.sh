@@ -17,4 +17,8 @@ if [[ "$1" == "setup" ]]; then
 	gnome-shell-extension-tool -e system-monitor@paradoxxx.zero.gmail.com
 
 	gnome-shell-extension-tool -e drive-menu@gnome-shell-extensions.gcampax.github.com
+
+	unzip ../bin/gnome-extensions/mediaplayer@patapon.info.zip -d /home/darfux/.local/share/gnome-shell/extensions
+
+	gnome-shell-extension-tool -e mediaplayer@patapon.info
 fi

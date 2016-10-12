@@ -15,6 +15,7 @@ bin/
 │   └── sitemanager.xml
 ├── gnome-extensions
 │   ├── maximus-two@wilfinitlike.gmail.com.zip
+│   ├── mediaplayer@patapon.info.zip
 │   └── system-monitor@paradoxxx.zero.gmail.com.zip
 ├── grub_customizer
 │   └── grub-customizer_5.0.6-0ubuntu1-ppa1x_amd64.deb
@@ -44,4 +45,4 @@ bin/
 └── tools
     └── fast-rm
 
-15 directories, 29 files
+15 directories, 30 files
