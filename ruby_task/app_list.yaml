@@ -3,7 +3,7 @@
 - git
 - git-cola
 - gparted
-- gsmartcontrol
+- smartmontools
 - mysql-workbench
 - sqliteman
 - tilda
@@ -11,6 +11,13 @@
 - alacarte
 - gimp
 - vim
+- minicom
+- screen
+- autossh
+
+- pbzip2
+- pigz
+- pxz
 
 - mesa-utils
 
@@ -20,3 +27,15 @@
 - sysv-rc-conf
 - python-mutagen
 - nautilus-actions
+- mediainfo
+- iotop
+- tree
+- bc
+
+- hwloc
+- ioping
+- fio
+- util-linux
+- htop
+- sysbench
+

@@ -15,6 +15,7 @@ bin/
 │   └── sitemanager.xml
 ├── gnome-extensions
 │   ├── maximus-two@wilfinitlike.gmail.com.zip
+│   ├── maximus-two@wilfinitlike.gmail.com.zip.old
 │   ├── mediaplayer@patapon.info.zip
 │   └── system-monitor@paradoxxx.zero.gmail.com.zip
 ├── grub_customizer
@@ -24,14 +25,16 @@ bin/
 ├── java
 │   ├── ant
 │   │   └── apache-ant-1.9.7-bin.tar.bz2
-│   ├── jdk-8u92-linux-x64.tar.gz
+│   ├── jdk-8u112-linux-x64.tar.gz
 │   └── use_java
+├── language-selector
+│   └── 64-language-selector-prefer.conf
 ├── sogou
 │   ├── Default_black
 │   │   ├── Default_black.ssf
 │   │   └── skin.ini
 │   ├── main.conf
-│   ├── sogoupinyin_2.0.0.0078_amd64.deb
+│   ├── sogoupinyin_2.1.0.0082_amd64.deb
 │   └── useSkin.txt
 ├── structure.example
 ├── sublime
@@ -39,10 +42,13 @@ bin/
 │   └── SublimeText2.tar.gz
 ├── theme
 │   └── humanity-icon-theme_0.6.10.tar.gz
+├── tidy-html5
+│   └── tidy-5.4.0-64bit.deb
 ├── tilda
 │   ├── config_0
 │   └── tilda_reset
 └── tools
-    └── fast-rm
+    ├── fast-rm
+    └── tmd
 
-15 directories, 30 files
+17 directories, 34 files
