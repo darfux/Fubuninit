@@ -1,4 +1,3 @@
 def setup_template
-	run_bash("mkdir -p ~/Templates")
-	run_bash("touch ~/Templates/Text")
+	run_bash("cp -r ../bin/Templates ~/")
 end

@@ -19,7 +19,7 @@ class << self
 			install_file = "#{Fubuninit::TMP_DIR}/#{file_name}"
 			
 			unless File.exists? install_file
-				run_bash("proxychains aria2c '#{url}' -d '#{Fubuninit::TMP_DIR}' -o #{file_name}")
+				run_bash("aria2c '#{url}' -d '#{Fubuninit::TMP_DIR}' -o #{file_name}")
 			end
 			src = install_file
 		else
@@ -37,7 +37,7 @@ class << self
 
 	def package_installed?(package_name, bin_name=nil)
 		bin_name ||= package_name
-		["dpkg --get-selections | grep #{package_name}", 
+		["dpkg --get-selections | grep '#{package_name}\\s*[^e]install'", 
 		"which #{bin_name}"].each do |cmd|
 			`#{cmd}`
 			if $?.exitstatus == 0

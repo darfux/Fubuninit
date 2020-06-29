@@ -18,7 +18,7 @@ if [[ "$1" == "licence" ]]; then
 fi
 
 if [[ "$1" == "package_control" ]]; then
-	proxychains wget "https://packagecontrol.io/Package%20Control.sublime-package" \
+	wget "https://packagecontrol.io/Package%20Control.sublime-package" \
 	-O "$setting_path/Installed Packages/Package Control.sublime-package"
 fi
 
@@ -26,7 +26,7 @@ fi
 if [[ "$1" == "sync_user_profile" ]]; then
 	profile_path="$HOME/.config/sublime-text-2/Packages/User"
 	rm -rf $profile_path/*
-	proxychains git clone https://github.com/darfux/ST2C.fux.git $profile_path
+	git clone https://github.com/darfux/ST2C.fux.git $profile_path
 	ln -s $profile_path "$HOME/Documents/STC2.fux"
 fi
 

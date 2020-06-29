@@ -65,11 +65,11 @@ run() {
 
 
 #check connection
-echo "Checking ipv6 connection..."
-if ping6 -c 1 bt.neu6.edu.cn >> /dev/null 2>&1; then
-    echo "ipv6 ok"
+echo "Checking network connection..."
+if ping -c 1 mirrors4.tuna.tsinghua.edu.cn >> /dev/null 2>&1; then
+    echo "network ok"
 else
-    echo "ipv6 not work, please check it!"
+    echo "network not work, please check it!"
     exit 1
 fi
 
@@ -78,12 +78,12 @@ fi
 
 
 # run fail_apt
-run setup_directory
-run change_source_list
-run install_basic_packages
+#run setup_directory
+#run change_source_list
+#run install_basic_packages
 
-run setup_proxy
-export http_proxy="http://127.0.0.1:8123"
+#run setup_proxy
+#export http_proxy="http://127.0.0.1:8123"
 
 run install_zsh
 run install_ruby

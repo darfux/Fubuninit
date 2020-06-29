@@ -17,5 +17,5 @@ if [[ "$1" == "gtk" ]]; then
 fi
 
 if [[ "$1" == "favorite" ]]; then
-	dconf write /org/gnome/shell/favorite-apps "['google-chrome.desktop', 'subl.desktop', 'org.gnome.Nautilus.desktop', 'git-cola.desktop', 'mysql-workbench.desktop', 'sqliteman.desktop']"
+	dconf write /org/gnome/shell/favorite-apps "['google-chrome.desktop', 'atom.desktop', 'org.gnome.Nautilus.desktop', 'git-cola.desktop', 'mysql-workbench.desktop']"
 fi

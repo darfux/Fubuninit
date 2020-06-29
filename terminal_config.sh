@@ -3,7 +3,7 @@
 
 dconf write /org/gnome/terminal/legacy/default-show-menubar false 
 dconf_profile_path=/org/gnome/terminal/legacy/profiles:/
-dconf_profile=${dconf_profile_path}$(dconf list $dconf_profile_path)
+dconf_profile=${dconf_profile_path}:$(gsettings get org.gnome.Terminal.ProfilesList default  | sed s/\'//g )/
 
 # https://developer.gnome.org/glib/stable/gvariant-text.html
 dconf write ${dconf_profile}use-theme-colors false

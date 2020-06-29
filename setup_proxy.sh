@@ -5,9 +5,9 @@ cp -r ./base/shadowsocks ~/Tools
 chmod 754 ~/Tools/shadowsocks/shadowsocks-local-linux64-1.1.4
 
 mkdir -p ~/.config/autostart/
-cp ./base/shadowsocks/shadowsocks-local-linux64-1.1.4.desktop ~/.config/autostart/
+cp ./base/shadowsocks/ss_up.desktop ~/.config/autostart/
 
-nohup ~/Tools/shadowsocks/shadowsocks-local-linux64-1.1.4 > /dev/null & 
+nohup ~/Tools/shadowsocks/ss_up.sh > /dev/null & 
 
 cp -r ./base/proxy/.proxychains ~/
 
@@ -20,4 +20,19 @@ sudo apt-get -y install polipo
 sudo cp base/polipo/config /etc/polipo 
 
 sudo service polipo restart
+
+function check_proxy_ok(){
+	proxychains curl -vs google.com 2>&1 | grep -q "Could not"
+	if [[ $? = 1 ]]; then
+		echo proxy ok
+	else
+		echo Proxy error
+		exit 1
+	fi
+}
+
+check_proxy_ok
+
+#sudo mv /usr/bin/proxychains /usr/bin/proxychains.bak
+#sudo cp ./fake_proxychains /usr/bin/proxychains
 

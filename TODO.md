@@ -34,11 +34,18 @@ https://unix.stackexchange.com/questions/37329/efficiently-delete-large-director
 - [ ] RVM --default issue(don't put environment in .profile)
 - [ ] pipes.sh(https://askubuntu.com/questions/699579/ascii-screensaver-for-the-command-line-or-a-tui)
 - [ ] Ruby gem list(bundler, gemrat...)
+- [ ] Golang
+
+##18.04
+
+#https://askubuntu.com/questions/969650/how-to-make-nautilus-use-file-roller-in-17-10-like-in-17-04
+- [x] python-nautilus
 
 **Features**
 - [ ] error handler and retry
 - [x] bin/ struct example
 - [ ] server version
-
+- [ ] post install verify
+- [ ] parallel
 
 

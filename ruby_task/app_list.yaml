@@ -1,11 +1,13 @@
 - p7zip-full
-- filezilla
+- unrar
+#- filezilla
 - git
 - git-cola
 - gparted
-- smartmontools
+#- smartmontools
 - mysql-workbench
-- sqliteman
+#- sqliteman
+- sqlitebrowser
 - tilda
 - vlc
 - alacarte
@@ -24,9 +26,9 @@
 - screenfetch
 - lm-sensors
 - testdisk
-- sysv-rc-conf
+#- sysv-rc-conf
 - python-mutagen
-- nautilus-actions
+#- nautilus-actions
 - mediainfo
 - iotop
 - tree
@@ -38,4 +40,8 @@
 - util-linux
 - htop
 - sysbench
+
+- dconf-editor
+- python-nautilus
+- tidy
 

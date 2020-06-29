@@ -19,5 +19,5 @@ end
 def setup_nvm_and_node
 	run_bash_file("nvm", "install")
 	_setup_nvm_env
-	run_bash_file("nvm", "bower")
+	#run_bash_file("nvm", "bower")
 end
