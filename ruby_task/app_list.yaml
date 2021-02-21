@@ -5,8 +5,9 @@
 - git-cola
 - gparted
 #- smartmontools
-- mysql-workbench
+# - mysql-workbench
 #- sqliteman
+- grub-customizer
 - sqlitebrowser
 - tilda
 - vlc
@@ -19,7 +20,7 @@
 
 - pbzip2
 - pigz
-- pxz
+# - pxz
 
 - mesa-utils
 
@@ -27,7 +28,7 @@
 - lm-sensors
 - testdisk
 #- sysv-rc-conf
-- python-mutagen
+- python3-mutagen
 #- nautilus-actions
 - mediainfo
 - iotop
@@ -45,3 +46,5 @@
 - python-nautilus
 - tidy
 
+- network-manager-openconnect-gnome
+- network-manager-openvpn-gnome

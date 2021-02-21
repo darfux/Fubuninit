@@ -1,25 +1,25 @@
 #!/bin/sh
 
 if [[ "$1" == "gnome" ]]; then
-	apt install -y gnome-session gnome-shell-extensions chrome-gnome-shell
+	apt-get install -y gnome-session gnome-shell-extensions chrome-gnome-shell gdm3
 
 	# https://itsfoss.com/vanilla-gnome-ubuntu/
-	update-alternatives  --set gdm3.css /usr/share/gnome-shell/theme/gnome-shell.css
+	# update-alternatives  --set gdm3.css /usr/share/gnome-shell/theme/gnome-shell.css
 
 	# https://help.gnome.org/admin/system-admin-guide/stable/session-user.html.en
 	cp ../bin/gdm/darfux /var/lib/AccountsService/users/darfux
 fi
 
 if [[ "$1" == "setup" ]]; then
-	unzip ../bin/gnome-extensions/pixel-saver@deadalnix.me.zip -d /home/darfux/.local/share/gnome-shell/extensions
+	unzip ../bin/gnome-extensions/pixel-saverdeadalnix.me.v23.shell-extension.zip -d /home/darfux/.local/share/gnome-shell/extensions
 
+    # https://askubuntu.com/questions/1230157/how-to-remove-title-bar-from-terminal-on-the-new-ubuntu-20-04
 	gnome-shell-extension-tool -e pixel-saver@deadalnix.me
-
-
+    gsettings set org.gnome.Terminal.Legacy.Settings headerbar false
 
 	# networkmanager
 
-	unzip ../bin/gnome-extensions/system-monitor@paradoxxx.zero.gmail.com.zip -d /home/darfux/.local/share/gnome-shell/extensions
+	unzip ../bin/gnome-extensions/system-monitorparadoxxx.zero.gmail.com.v39.shell-extension.zip -d /home/darfux/.local/share/gnome-shell/extensions
 
 	dconf  write  /org/gnome/shell/extensions/system-monitor/memory-display false
 	dconf  write  /org/gnome/shell/extensions/system-monitor/net-style "'digit'"
@@ -33,9 +33,9 @@ if [[ "$1" == "setup" ]]; then
 
 	gnome-shell-extension-tool -e drive-menu@gnome-shell-extensions.gcampax.github.com
 
-	unzip ../bin/gnome-extensions/mediaplayer@patapon.info.zip -d /home/darfux/.local/share/gnome-shell/extensions
+	# unzip ../bin/gnome-extensions/mediaplayer@patapon.info.zip -d /home/darfux/.local/share/gnome-shell/extensions
 
-	gnome-shell-extension-tool -e mediaplayer@patapon.info
+	# gnome-shell-extension-tool -e mediaplayer@patapon.info
 
 	dconf write /org/gnome/terminal/legacy/default-show-menubar false
 	dconf_profile_path=/org/gnome/terminal/legacy/profiles:/

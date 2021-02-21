@@ -5,6 +5,8 @@ if [[ ! -z $SUDO_USER ]]; then
 	exit 1
 fi
 
+set -eux
+
 mkdir -p log
 ERROR_LOG="log/error.log"
 INFO_LOG="log/info.log"
@@ -78,19 +80,23 @@ fi
 
 
 # run fail_apt
-#run setup_directory
-#run change_source_list
-#run install_basic_packages
+run setup_directory
+run change_source_list
+run install_basic_packages
 
-#run setup_proxy
-#export http_proxy="http://127.0.0.1:8123"
+run setup_proxy
+export http_proxy="http://127.0.0.1:8123"
+export https_proxy=http://127.0.0.1:8118
 
 run install_zsh
 run install_ruby
 run terminal_config
 
+set +eux
 source /home/darfux/.rvm/scripts/rvm
 cd ruby_task
+unset http_proxy
+unset https_proxy
 rvmsudo -E ruby main.rb
 
 # enable_auto_upgrade

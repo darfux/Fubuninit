@@ -4,5 +4,5 @@ def install_atom
 	run_bash("cp ../bin/atom/atom-amd64.deb #{Fubuninit::TMP_DIR}/")
 	AptGet.install_deb("atom-amd64")
 
-	run_bash_file("atom")
+	# run_bash_file("atom")
 end

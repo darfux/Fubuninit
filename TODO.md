@@ -23,8 +23,8 @@
 - [x] using subl as git-cola editor
 - [ ] maven PATH
 - [ ] using rvm to get ruby locally(http://stackoverflow.com/questions/5447805/rvm-is-there-a-way-for-simple-offline-install)
-- [ ] language-selector-prefer(门)
-- [ ] tidy-html5
+- [x] language-selector-prefer(门)
+- [x] tidy-html5
 - [ ] prevent hardcode sogou name
 - [ ] Quick rm with rsync(
 https://unix.stackexchange.com/questions/37329/efficiently-delete-large-directory-containing-thousands-of-files)
@@ -41,11 +41,14 @@ https://unix.stackexchange.com/questions/37329/efficiently-delete-large-director
 #https://askubuntu.com/questions/969650/how-to-make-nautilus-use-file-roller-in-17-10-like-in-17-04
 - [x] python-nautilus
 
+##18.04
+
+#https://askubuntu.com/questions/969650/how-to-make-nautilus-use-file-roller-in-17-10-like-in-17-04
+- [x] python-nautilus
+
 **Features**
 - [ ] error handler and retry
 - [x] bin/ struct example
 - [ ] server version
 - [ ] post install verify
 - [ ] parallel
-
-

@@ -10,29 +10,25 @@ Dir.glob("scripts/*") { |file| require "./#{file}" }
 
 
 
-# test
-
 command_list = [
-	#:install_chrome,
-	#:install_atom,
-	#:install_grub_customizer,
-	#:install_sogou,
-	:setup_sublime,
+	:install_chrome,
+	:install_atom,
+	:install_sogou,
 	:install_official_app,
+	:install_mysql_workbench,
+	:install_docker,
 	:setup_apps,
 	:config_git,
 
 	:setup_java,
 	:setup_apache_ant,
-	:setup_android_studio,
 
-	#:change_theme,
+	:change_theme,
 	:setup_gnome_extension,
 	:config_favorite,
 	:setup_template,
 	:config_language_selector,
 
-	#:install_nautilus_actions,
 	:setup_compress_fr,
 
 	:setup_nvm_and_node,
