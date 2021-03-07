@@ -10,20 +10,28 @@ end
 def _pipe_handler
 	lambda do |stdin, stdout, stderr, wait_thr|
 		info = ""
-		loop do
-			output = stdout.gets
-			puts output
-			break if output.nil?
-			info << output
-			yield output if block_given?
+		to = Thread.new do
+			loop do
+				output = stdout.gets
+				puts output
+				break if output.nil?
+				info << output
+				yield output if block_given?
+			end
 		end
 
 		err = ""
-		loop do
-			output = stderr.gets
-			break if output.nil?
-			err << output
+		te = Thread.new do
+			loop do
+				output = stderr.gets
+				break if output.nil?
+				err << output
+			end
 		end
+		stdin.close
+		to.join
+		te.join
+
 		stdin.close
 		stdout.close
 		stderr.close

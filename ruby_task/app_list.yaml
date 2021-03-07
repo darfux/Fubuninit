@@ -1,7 +1,6 @@
 - p7zip-full
 - unrar
 #- filezilla
-- git
 - git-cola
 - gparted
 #- smartmontools

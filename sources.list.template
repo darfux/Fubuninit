@@ -1,8 +1,8 @@
-deb http://mirrors4.tuna.tsinghua.edu.cn/ubuntu/ {UBUNTU_VERSION} main multiverse restricted universe
-deb http://mirrors4.tuna.tsinghua.edu.cn/ubuntu/ {UBUNTU_VERSION}-backports main multiverse restricted universe
-deb http://mirrors4.tuna.tsinghua.edu.cn/ubuntu/ {UBUNTU_VERSION}-proposed main multiverse restricted universe
-deb http://mirrors4.tuna.tsinghua.edu.cn/ubuntu/ {UBUNTU_VERSION}-security main multiverse restricted universe
-deb http://mirrors4.tuna.tsinghua.edu.cn/ubuntu/ {UBUNTU_VERSION}-updates main multiverse restricted universe
+deb https://mirrors4.tuna.tsinghua.edu.cn/ubuntu/ {UBUNTU_VERSION} main multiverse restricted universe
+deb https://mirrors4.tuna.tsinghua.edu.cn/ubuntu/ {UBUNTU_VERSION}-backports main multiverse restricted universe
+deb https://mirrors4.tuna.tsinghua.edu.cn/ubuntu/ {UBUNTU_VERSION}-proposed main multiverse restricted universe
+deb https://mirrors4.tuna.tsinghua.edu.cn/ubuntu/ {UBUNTU_VERSION}-security main multiverse restricted universe
+deb https://mirrors4.tuna.tsinghua.edu.cn/ubuntu/ {UBUNTU_VERSION}-updates main multiverse restricted universe
 #deb-src http://mirrors4.tuna.tsinghua.edu.cn/ubuntu/ {UBUNTU_VERSION} main multiverse restricted universe
 #deb-src http://mirrors4.tuna.tsinghua.edu.cn/ubuntu/ {UBUNTU_VERSION}-backports main multiverse restricted universe
 #deb-src http://mirrors4.tuna.tsinghua.edu.cn/ubuntu/ {UBUNTU_VERSION}-proposed main multiverse restricted universe

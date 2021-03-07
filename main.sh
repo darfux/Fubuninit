@@ -6,10 +6,10 @@ if [[ ! -z $SUDO_USER ]]; then
 fi
 
 set -eux
-
-mkdir -p log
-ERROR_LOG="log/error.log"
-INFO_LOG="log/info.log"
+LOG_DIR="${HOME}/.Fubuninit/log"
+mkdir -p "${LOG_DIR}"
+ERROR_LOG="${LOG_DIR}/error.log"
+INFO_LOG="${LOG_DIR}/info.log"
 trace=""
 
 # https://github.com/ab/bin/blob/master/bash-backtrace.sh
@@ -60,8 +60,15 @@ error() {
 trap 'error ${LINENO} "$(cat $ERROR_LOG)"' ERR
 
 run() {
+  jobname="$1"
   trace=$(bash_backtrace)
+  donefile="${LOG_DIR}/${jobname}.done"
+  if [[ -f "${donefile}" ]]; then
+      echo "${jobname} has been done, skip"
+      return
+  fi
   bash -e $1.sh > >(tee --append $INFO_LOG)  2> >(tee $ERROR_LOG >&2)
+  touch "${donefile}"
 }
 
 
@@ -78,15 +85,13 @@ fi
 # temporarily disable auto upgrade
 # disable_auto_upgrade
 
-
-# run fail_apt
 run setup_directory
 run change_source_list
 run install_basic_packages
 
 run setup_proxy
 export http_proxy="http://127.0.0.1:8123"
-export https_proxy=http://127.0.0.1:8118
+export https_proxy=http://127.0.0.1:8123
 
 run install_zsh
 run install_ruby

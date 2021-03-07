@@ -11,10 +11,10 @@ Dir.glob("scripts/*") { |file| require "./#{file}" }
 
 
 command_list = [
+	:install_official_app,
 	:install_chrome,
 	:install_atom,
 	:install_sogou,
-	:install_official_app,
 	:install_mysql_workbench,
 	:install_docker,
 	:setup_apps,
@@ -44,6 +44,7 @@ command_list.each do |cmd|
 		puts "#{cmd} has been done, skip."
 		next
 	end
+	puts "--------running #{cmd}--------"
 	send(cmd)
 	File.open(flag_file, "w") {  }
 end

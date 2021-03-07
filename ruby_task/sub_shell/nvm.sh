@@ -1,7 +1,8 @@
 #!/bin/bash
 
-
+set -eux
 if [[ "$1" == "install" ]]; then
+	rm -rf /home/darfux/.nvm
 	proxychains bash -c "wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash"
 	proxychains bash -c ". ~/.nvm/nvm.sh; nvm install node"
 	echo "export NVM_DIR=\"/home/darfux/.nvm\"" >> $HOME/.zshrc

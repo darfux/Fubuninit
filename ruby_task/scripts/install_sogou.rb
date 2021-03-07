@@ -1,8 +1,9 @@
 def install_sogou
-	return true if AptGet.package_installed?('sogou-qimpanel')
+	return true if AptGet.package_installed?('sogoupinyin')
 
 	# download_url = "http://pinyin.sogou.com/linux/download.php?f=linux&bit=64"
 	run_bash("cp ../bin/sogou/sogoupinyin_2.4.0.3469_amd64.deb #{Fubuninit::TMP_DIR}/")
+	run_bash_file("sogou")
 
 	if AptGet.install_deb("sogoupinyin_2.4.0.3469_amd64")==0
 		sleep 1
@@ -21,6 +22,9 @@ def install_sogou
 		sleep 5
 		run_bash("sed  -i \"s/sogoupinyin:False/sogoupinyin:True/g\" #{ENV['HOME']}/.config/fcitx/profile")
 		run_bash(%Q{ sed -i s/"#SwitchPreedit=CTRL_ALT_P"/"SwitchPreedit="/g #{ENV['HOME']}/.config/fcitx/config })
+		run_bash("fcitx -r > /dev/null")
+		sleep 5
+		run_bash("cp  ../bin/sogou/env.ini #{ENV['HOME']}/.config/sogoupinyin/conf/")
 		#run_bash("fcitx-remote -r  > /dev/null")
 
 
