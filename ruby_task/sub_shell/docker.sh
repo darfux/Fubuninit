@@ -8,3 +8,5 @@ sudo add-apt-repository \
    stable"
 
 sudo apt-get install -y docker-ce
+
+sudo usermod -aG docker $USER

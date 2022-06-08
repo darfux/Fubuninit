@@ -53,4 +53,5 @@ if [[ "$1" == "setup" ]]; then
 	dconf write  /org/gnome/desktop/interface/monospace-font-name "'Ubuntu Mono 13'"
 
 	dconf write /org/gnome/desktop/sound/input-feedback-sound "false"
+	gsettings set org.gnome.desktop.interface clock-show-date false
 fi

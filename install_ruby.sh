@@ -30,3 +30,4 @@ echo "rvm_silence_path_mismatch_check_flag=1" >> ~/.rvmrc
 
 gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
 gem install bundler
+bundle config mirror.https://rubygems.org https://gems.ruby-china.com

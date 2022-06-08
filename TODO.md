@@ -46,6 +46,12 @@ https://unix.stackexchange.com/questions/37329/efficiently-delete-large-director
 #https://askubuntu.com/questions/969650/how-to-make-nautilus-use-file-roller-in-17-10-like-in-17-04
 - [x] python-nautilus
 
+## 20.04
+terminal use bright color for bold text
+login screen
+https://askubuntu.com/questions/1236189/change-ubuntus-purple-login-screen-to-gnome-3-36s
+trace config in bin that can be public
+
 **Features**
 - [ ] error handler and retry
 - [x] bin/ struct example

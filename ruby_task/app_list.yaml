@@ -10,7 +10,8 @@
 - sqlitebrowser
 - tilda
 - vlc
-- alacarte
+# - alacarte # menu editor
+- menulibre
 - gimp
 - vim
 - minicom
@@ -44,6 +45,16 @@
 - dconf-editor
 - python-nautilus
 - tidy
+
+- zssh
+- expect
+- autojump
+- remmina
+
+- ctags
+- global
+
+- btrfs-progs
 
 - network-manager-openconnect-gnome
 - network-manager-openvpn-gnome
