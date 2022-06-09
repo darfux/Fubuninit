@@ -11,6 +11,7 @@ pkgs=(
     fonts-arphic-ukai
     language-pack-zh-hans
     language-pack-gnome-zh-hans
+    libgsettings-qt-dev
 )
 
 sudo apt-get install -y ${pkgs[*]}

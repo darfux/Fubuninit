@@ -4,12 +4,12 @@ UBUNTU_VERSION=$(lsb_release -c -s)
 
 sources_name=$UBUNTU_VERSION.sources.list
 
-cp ./sources.list.template ./$sources_name
+cp ./sources.list.template $TMP_DIR/$sources_name
 
-sed -i "s/{UBUNTU_VERSION}/$UBUNTU_VERSION/g"  ./$sources_name
+sed -i "s/{UBUNTU_VERSION}/$UBUNTU_VERSION/g"  $TMP_DIR/$sources_name
 
 sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak
-sudo mv ./$sources_name /etc/apt/sources.list
+sudo mv $TMP_DIR/$sources_name /etc/apt/sources.list
 
 
 

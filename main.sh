@@ -6,8 +6,10 @@ if [[ ! -z $SUDO_USER ]]; then
 fi
 
 set -eux
-LOG_DIR="${HOME}/.Fubuninit/log"
+export LOG_DIR="${HOME}/.Fubuninit/log"
+export TMP_DIR="${HOME}/.Fubuninit/tmp"
 mkdir -p "${LOG_DIR}"
+mkdir -p "${TMP_DIR}"
 ERROR_LOG="${LOG_DIR}/error.log"
 INFO_LOG="${LOG_DIR}/info.log"
 trace=""

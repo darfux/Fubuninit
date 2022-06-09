@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eux
 if [[ "$1" == "gnome" ]]; then
-	apt-get install -y gnome-session gnome-shell-extensions chrome-gnome-shell gdm3
+	apt-get install -y gnome-session gnome-shell-extensions chrome-gnome-shell gdm3 gnome-tweaks gnome-shell-extension-manager
 
 	# https://itsfoss.com/vanilla-gnome-ubuntu/
 	# update-alternatives  --set gdm3.css /usr/share/gnome-shell/theme/gnome-shell.css
@@ -11,8 +11,9 @@ if [[ "$1" == "gnome" ]]; then
 fi
 
 if [[ "$1" == "setup" ]]; then
+    mkdir -p /home/darfux/.local/share/gnome-shell/extensions
 	rm -rf /home/darfux/.local/share/gnome-shell/extensions/pixel-saver@deadalnix.me
-	unzip ../bin/gnome-extensions/pixel-saverdeadalnix.me.v23.shell-extension.zip -d /home/darfux/.local/share/gnome-shell/extensions/pixel-saver@deadalnix.me
+	unzip ../bin/gnome-extensions/pixel-saverdeadalnix.me.v26.shell-extension.zip -d /home/darfux/.local/share/gnome-shell/extensions/pixel-saver@deadalnix.me
 
 	# https://askubuntu.com/questions/1230157/how-to-remove-title-bar-from-terminal-on-the-new-ubuntu-20-04
 	gnome-shell-extension-tool -e pixel-saver@deadalnix.me
@@ -20,7 +21,7 @@ if [[ "$1" == "setup" ]]; then
 
 	# networkmanager
 	rm -rf /home/darfux/.local/share/gnome-shell/extensions/system-monitor@paradoxxx.zero.gmail.com
-	unzip ../bin/gnome-extensions/system-monitorparadoxxx.zero.gmail.com.v39.shell-extension.zip -d /home/darfux/.local/share/gnome-shell/extensions/system-monitor@paradoxxx.zero.gmail.com
+	unzip ../bin/gnome-extensions/system-monitor-nextparadoxxx.zero.gmail.com.v42.shell-extension.zip -d /home/darfux/.local/share/gnome-shell/extensions/system-monitor-next@paradoxxx.zero.gmail.com
 
 	dconf  write  /org/gnome/shell/extensions/system-monitor/memory-display false
 	dconf  write  /org/gnome/shell/extensions/system-monitor/net-style "'digit'"
@@ -30,9 +31,9 @@ if [[ "$1" == "setup" ]]; then
 	dconf  write  /org/gnome/shell/extensions/system-monitor/net-show-menu false
 	dconf  write  /org/gnome/shell/extensions/system-monitor/swap-show-menu false
 
-	gnome-shell-extension-tool -e system-monitor@paradoxxx.zero.gmail.com
+	gnome-shell-extension-tool -e system-monitor-next@paradoxxx.zero.gmail.com
 
-	gnome-shell-extension-tool -e drive-menu@gnome-shell-extensions.gcampax.github.com
+	# gnome-shell-extension-tool -e drive-menu@gnome-shell-extensions.gcampax.github.com
 
 	# unzip ../bin/gnome-extensions/mediaplayer@patapon.info.zip -d /home/darfux/.local/share/gnome-shell/extensions
 

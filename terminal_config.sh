@@ -1,7 +1,7 @@
 #!/bin/bash
+set -eux
 
-
-dconf write /org/gnome/terminal/legacy/default-show-menubar false 
+dconf write /org/gnome/terminal/legacy/default-show-menubar false
 dconf_profile_path=/org/gnome/terminal/legacy/profiles:/
 dconf_profile=${dconf_profile_path}:$(gsettings get org.gnome.Terminal.ProfilesList default  | sed s/\'//g )/
 

@@ -50,11 +50,16 @@ https://unix.stackexchange.com/questions/37329/efficiently-delete-large-director
 terminal use bright color for bold text
 login screen
 https://askubuntu.com/questions/1236189/change-ubuntus-purple-login-screen-to-gnome-3-36s
+
+**Features**
+- [x] bin/ struct example
+
+## 22.04
 trace config in bin that can be public
 
 **Features**
-- [ ] error handler and retry
-- [x] bin/ struct example
 - [ ] server version
+- [ ] error handler and retry
 - [ ] post install verify
 - [ ] parallel
+- [ ] disable apt update during running

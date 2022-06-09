@@ -4,7 +4,7 @@ set -eux
 set -o pipefail
 
 if [[ ! -f /home/darfux/.rvm/bin/rvm ]]; then
-    gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+    gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
     curl -sSL https://get.rvm.io | tail -n +2 | bash -s stable
 fi
 
@@ -16,9 +16,9 @@ unset http_proxy
 unset https_proxy
 
 rvm requirements
-rvm install ruby --latest --disable-binary
+rvm install 3.1.2
 
-/bin/zsh --login -c "rvm use ruby --latest --default"
+/bin/zsh --login -c "rvm use ruby 3.1.2 --default"
 /bin/zsh --login -c "ruby -v"
 set -eux
 

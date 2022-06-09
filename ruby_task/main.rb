@@ -13,7 +13,8 @@ Dir.glob("scripts/*") { |file| require "./#{file}" }
 command_list = [
 	:install_official_app,
 	:install_chrome,
-	:install_atom,
+	# :install_atom,
+	:install_vscode,
 	:install_sogou,
 	:install_mysql_workbench,
 	:install_docker,

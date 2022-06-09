@@ -2,10 +2,10 @@ def install_sogou
 	return true if AptGet.package_installed?('sogoupinyin')
 
 	# download_url = "http://pinyin.sogou.com/linux/download.php?f=linux&bit=64"
-	run_bash("cp ../bin/sogou/sogoupinyin_2.4.0.3469_amd64.deb #{Fubuninit::TMP_DIR}/")
+	run_bash("cp ../bin/sogou/sogoupinyin_4.0.1.2123_amd64.deb #{Fubuninit::TMP_DIR}/")
 	run_bash_file("sogou")
 
-	if AptGet.install_deb("sogoupinyin_2.4.0.3469_amd64")==0
+	if AptGet.install_deb("sogoupinyin_4.0.1.2123_amd64")==0
 		sleep 1
 		pid = Process.fork
 		if pid.nil? then
