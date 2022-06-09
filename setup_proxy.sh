@@ -7,7 +7,7 @@ if ! ps -ef | grep [s]hadow; then
     chmod 754 ~/Tools/shadowsocks/shadowsocks-local-linux64-1.1.5
     mkdir -p ~/.config/autostart/
     cp ./base/shadowsocks/ss_up.desktop ~/.config/autostart/
-    nohup ~/Tools/shadowsocks/ss_up.sh > /dev/null &
+    nohup bash ~/Tools/shadowsocks/ss_up.sh > /dev/null &
 fi
 
 if ! command -v proxychains; then
